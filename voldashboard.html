@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer Dashboard - Nurturing Intellects</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body {
+font-family: 'Arial', sans-serif;
+background-color: #f4f4f9;
+color: #333;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #3b5998;
+color: white;
+padding: 10px 0;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+margin: 0;
+font-size: 24px;
+}
+
+nav {
+margin-top: 10px;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+display: flex;
+justify-content: center;
+margin: 0;
+}
+
+nav ul li {
+margin: 0 15px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+font-size: 16px;
+transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+color: #ffcc00;
+}
+
+.dashboard {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 20px;
+}
+
+.card {
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin: 20px;
+padding: 20px;
+flex: 1;
+min-width: 300px;
+max-width: 400px;
+transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+transform: scale(1.05);
+}
+
+.card h2 {
+margin-top: 0;
+color: #3b5998;
+}
+
+.card p {
+color: #555;
+}
+
+.card .status {
+font-weight: bold;
+}
+
+.button {
+background-color: #3b5998;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+.button:hover {
+background-color: #ffcc00;
+color: #333;
+}
+
+footer {
+background-color: #3b5998;
+color: white;
+text-align: center;
+padding: 10px 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-around;
+}
+
+.footer-content div {
+flex: 1;
+max-width: 300px;
+}
+
+.footer-bottom {
+margin-top: 10px;
+font-size: 14px;
+}
+
+.table-container {
+overflow-x: auto;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 20px 0;
+}
+
+th, td {
+padding: 12px;
+border: 1px solid #ddd;
+text-align: left;
+}
+
+th {
+background-color: #3b5998;
+color: white;
+}
+
+@media screen and (max-width: 768px) {
+.dashboard {
+flex-direction: column;
+align-items: center;
+}
+
+.footer-content {
+flex-direction: column;
+align-items: center;
+}
+
+.footer-content div {
+margin-bottom: 20px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Volunteer Dashboard</h1>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="children.html">Children</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li><a href="account.html">Account</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="dashboard">
+<div class="card">
+<h2>Account Details</h2>
+<p>Name: John Doe</p>
+<p>Email: johndoe@example.com</p>
+<p>Phone: 123-456-7890</p>
+</div>
+<div class="card">
+<h2>Project Details</h2>
+<p>Current Project: Education Support</p>
+<p>Role: Mentor</p>
+<p>Start Date: 01/01/2024</p>
+<p class="status">Status: Active</p>
+<button class="button">View Project</button>
+</div>
+<div class="card">
+<h2>Child Under Care</h2>
+<p>Name: Jane Smith</p>
+<p>Age: 10</p>
+<p>School: Sunshine Elementary</p>
+<p class="status">Payment Status: Due</p>
+<button class="button">Make Payment</button>
+</div>
+</div>
+
+<footer>
+<div class="footer-content">
+<div>
+<h3>About Us</h3>
+<p>Nurturing Intellects is dedicated to improving the lives of underprivileged children through education and community support.</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="children.html">Children</a></li>
+<li><a href="donate.html">Donate</a></li>
+</ul>
+</div>
+<div>
+<h3>Contact Us</h3>
+<form action="contact.html" method="post">
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+<button type="submit" class="button">Send</button>
+</form>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2024 Nurturing Intellects. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Child Details - Nurturing Intellects</title>
+<link rel="stylesheet" href="donate.css">
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.child-details {
+background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+.child-details img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.child-details .info {
+    padding: 20px;
+}
+.child-details .info h2 {
+    margin-top: 0;
+}
+.child-details .info p {
+    margin: 10px 0;
+}
+.child-details .info label {
+    font-weight: bold;
+}
+.child-details .info textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.child-details .info button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+.child-details .info button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+</style>
+<script>
+function getChildDetails() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const childId = urlParams.get('childId');
+    const childDetails = {
+1: {
+Name: 'Aarav Kumar',
+Age: 6,
+Area:'Rupaspur',
+City: 'Patna',
+State: 'Bihar',
+ParentsName: 'Mr and Mrs Kumar',
+Hobby: 'Playing football',
+Image: 'children2photos/1674117737.jpeg',
+Description: 'Aarav is a cheerful and energetic child who loves to play and learn new things. He is looking for a loving family to nurture him.'
+},
+2: {
+Name: 'Ananya Das',
+Age: 5,
+Area:'Patia',
+City: 'Bhubaneswar',
+State: 'Odisha',
+ParentsName: 'Late Ram Das And Mrs Sima Das',
+Hobby: 'Drawing and reading',
+Image: 'children2photos/1684770904.jpg',
+Description: 'Ananya is a kind-hearted and creative child who enjoys drawing and reading. She is looking for a loving family to support her growth.'
+},
+3:{
+Name: 'Vikram Roy',
+Age: 7,
+Area:'Dwarka',
+City: 'New Delhi',
+State: 'Delhi',
+ParentsName: 'Mr Amit Roy and Mrs. Neha Roy',
+Hobby: 'Playing cricket and learning new things',
+Image: 'children2photos/1685425730.jpg',
+Description: 'Vikram is an energetic and curious child who loves playing cricket and learning about the world around him. He is in need of a caring family to nurture his interests and potential.'
+        },
+        4:{
+          Name: 'Pooja Singh',
+Age: 6,
+Area:'Kanke',
+City: 'Ranchi',
+State: 'Jharkhand',
+ParentsName: 'Mr. Rajesh Singh and Mrs. Seema Singh',
+Hobby: 'Singing and dancing',
+Image: 'children2photos/1688200211.jpg',
+Description: 'Pooja is a talented and lively child who finds joy in singing and dancing. She is hoping to find a supportive family to encourage her creative pursuits.'
+        },
+    5:{    
+Name: 'Rohan Gupta',
+Area:'Rukanpura',
+Age: 8,
+City: 'Patna',
+State: 'Bihar',
+ParentsName: 'Late Rahul Gupta and Mrs. Priya Gupta',
+Hobby: 'Playing chess and reading books',
+Image: 'children2photos/1688052623.jpg',
+Description: 'Rohan is an intelligent and thoughtful child who enjoys playing chess and reading books. He is seeking a caring family to provide him with a nurturing environment to thrive.'
+
+        },
+      6:{
+        Name: 'Sneha Patil',
+        
+Age: 5,
+Area:'Sutahat',
+City: 'Cuttack',
+State: 'Odisha',
+ParentsName: 'Amit Patil and Mrs. Kavita Patil',
+Hobby: 'Gardening and exploring nature',
+Image: 'children2photos/1688200302.jpg',
+Description: 'Sneha is a nature-loving child who finds happiness in gardening and exploring the great outdoors. She is in need of a loving family to support her interests and help her grow.'
+      },
+7:{
+Name: 'Aditya Sharma',
+Age: 7,
+Area:'Janpath Nagar',
+City: 'South Delhi',
+State: 'Delhi',
+ParentsName: 'Late Rakesh Sharma and Mrs. Meena Sharma',
+Hobby: 'Playing football and solving puzzles',
+Image: 'children2photos/1688200600.jpg',
+Description: 'Aditya is an active and intelligent child who enjoys playing football and solving puzzles. He is hoping to find a supportive family to encourage his physical and mental development.'},
+8:{
+Name: 'Riya Verma',
+Age: 9,
+Area:'Vaishali Nagar',
+City: 'Jaipur',
+State: 'Rajasthan',
+ParentsName: 'Late Sanjay Verma and Mrs. Neha Verma',
+Hobby: 'Painting and storytelling',
+Image: 'children2photos/1688200582.jpg',
+Description: 'Riya is a creative and imaginative child who loves painting and storytelling. She is in need of a nurturing family to foster her artistic talents and provide her with a loving home.'
+
+      },
+  9:{
+    Name: 'Aryan Mehta',
+Age: 7,
+Area:'Maninagar',
+City: 'Ahmedabad',
+State: 'Gujarat',
+ParentsName: 'Late Amit Mehta and Mrs. Priya Mehta',
+Hobby: 'Building models and exploring science',
+Image: 'children2photos/1688200469.jpg',
+Description: 'Aryan is an inquisitive and hands-on child who enjoys building models and exploring science. He is seeking a supportive family to encourage his curiosity and provide him with educational opportunities.'},
+10:{
+Name: 'Priya Devi',
+Age: 8,
+Area:'Dharavi',
+City: 'Mumbai',
+State: 'Maharashtra',
+ParentsName: 'Mr.Rohit Kumar and Mrs. Anjali Devi',
+Hobby: 'Dancing and acting',
+Image: 'children2photos/1690810456.jpg',
+Description: 'Priya is a talented and expressive child who loves dancing and acting. She is in need of a loving family to nurture her artistic abilities and provide her with a supportive environment to pursue her passions.'},
+11:{
+Name: 'Sufina Mohammad',
+Age: 10,
+Area:'Hazratganj',
+City: 'Lucknow',
+State: 'Uttar Pradesh',
+ParentsName: 'Mr.Hasaan Raza Singh and Mrs. Sonia Raza',
+Hobby: 'Playing with toy cars and building blocks',
+Image: '',
+Description: 'Sufina is an active and imaginative child who finds joy in playing with toy cars and building blocks. She is hoping to find a caring family to provide her with a safe and nurturing environment to grow and thrive.'},
+12:{
+Name: 'Nisha Sharma',
+Age: 5,
+Area:'Howrah',
+City: 'Kolkata',
+State: 'West Bengal',
+ParentsName: ' Anil Sharma and Mrs. Reena Sharma',
+Hobby: 'Singing',
+Image: 'child14.jpg',
+Description: 'Nisha is a musically inclined child who loves singing. She is in need of a supportive family to encourage her musical talents and provide her with opportunities to pursue her interests.'
+  },
+  13:{
+    Name: 'Venkatesh',
+Age: 6,
+Area:'Kodambakkam',
+City: 'Chennai',
+State: 'Tamil Nadu',
+ParentsName: 'Mr and Mrs Iyer',
+Hobby: 'Playing cricket and learning about different cultures',
+Image: 'child15.jpg',
+Description: 'Rahul is an energetic and curious child who loves playing cricket and learning about different cultures. He is seeking a loving family to nurture his interests and provide him with a supportive environment to grow and explore.'
+  }
+        
+    };
+
+    return childDetails[childId];
+}
+
+function submitInquiry() {
+    alert('Thank you for your inquiry. We will respond to you within 24 hours.');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const childDetails = getChildDetails();
+
+    if (childDetails) {
+        document.getElementById('child-image').src = childDetails.Image;
+        document.getElementById('child-name').innerText = childDetails.Name;
+        document.getElementById('child-age').innerText = childDetails.Age;
+        document.getElementById('child-area').innerText = childDetails.Area;
+        document.getElementById('child-city').innerText = childDetails.City;
+        document.getElementById('child-state').innerText = childDetails.State;
+        document.getElementById('child-parentsName').innerText = childDetails.ParentsName;
+        document.getElementById('child-hobby').innerText = childDetails.Hobby;
+        document.getElementById('child-description').innerText = childDetails.Description;
+    }
+});
+</script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="aaron-burden-6jYoil2GhVk-unsplash.jpg" class="image" alt="Nurturing Intellects">
+    </div>
+    <div class="text">
+        <h1>Nurturing Intellects</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="school.html">Schools</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="child-details">
+        <img id="child-image" src="" alt="Child Image">
+        <div class="info">
+            <h2 id="child-name"></h2>
+            <p><label>Age:</label> <span id="child-age"></span></p>
+            <p><label>Area:</label> <span id="child-area"></span></p>
+            <p><label>City:</label> <span id="child-city"></span></p>
+            <p><label>State:</label> <span id="child-state"></span></p>
+            <p><label>Parents Name:</label> <span id="child-parentsName"></span></p>
+            <p><label>Hobby:</label> <span id="child-hobby"></span></p>
+            <p id="child-description"></p>
+            <label for="further-questions">Any further questions you would like to ask?</label>
+            <textarea id="further-questions"></textarea>
+            <button onclick="submitInquiry()">Submit</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Nurturing Intellects</h3>
+                <p>Nurturing Intellects is dedicated to improving the lives of underprivileged children through education and community support. Join us in our mission to create brighter futures.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" style="color: blue;">Home</a></li>
+                    <li><a href="school.html" style="color: blue;">Schools</a></li>
+                    <li><a href="volunteer.html" style="color: blue;">Volunteer</a></li>
+                    <li><a href="donate.html" style="color: blue;">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h3>Contact Us</h3>
+                <form action="contact.html" method="post">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nurturing Intellects. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

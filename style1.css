@@ -1,0 +1,80 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color:#6abadeba;
+    font-family: 'Arial';
+    background-image: url('yannis-h-uaPaEM7MiQQ-unsplash.jpg');
+    background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  cursor:pointer;
+}
+.login{
+    margin-top: 150px;;   
+    width: 382px;
+        overflow: hidden;
+     margin-left: 500px;;
+     margin-right: 60px;
+       
+        padding: 80px;
+        background-image: url('aaron-burden-6jYoil2GhVk-unsplash.jpg');
+        background-repeat: no-repeat;
+  background-size: cover;
+        border-radius: 15px ;
+
+}
+h2{
+    text-align: center;
+    color: #277582;
+    padding: 20px;
+}
+label{
+    color:rgb(48, 243, 84);
+    font-size: 15px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+a{
+    float: right;
+    background-color: grey;
+}
+#button{
+    font-size: 16px;
+cursor:pointer;
+
+}
+ #label1{
+        font-size: 11px;
+        font-weight: lighter;
+    }
+    button:hover{
+        transform: scale(1.2);
+    }

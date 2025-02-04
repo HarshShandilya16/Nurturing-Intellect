@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schools - Nurturing Intellects</title>
+<link rel="stylesheet" href="donate.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.steps {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.steps h2 {
+    text-decoration: underline;
+}
+
+.flowchart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flowchart .start-end, .flowchart .process, .flowchart .decision {
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.flowchart .start-end {
+    background-color: #ffcc00;
+    border: 2px solid #ffa500;
+}
+
+.flowchart .process {
+    background-color: #87cefa;
+    border: 2px solid #00bfff;
+}
+
+.flowchart .decision {
+    background-color: #ffb6c1;
+    border: 2px solid #ff69b4;
+}
+
+.flowchart .arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #000;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.schools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.school-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.school-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.school-card .details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.school-card .details h3 {
+    margin: 0 0 10px 0;
+}
+
+.school-card .details p {
+    margin: 0 0 10px 0;
+    flex-grow: 1;
+}
+
+.list {
+    font-size: 40px;
+    margin-left: 30px;
+    font-weight: 600;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img src="aaron-burden-6jYoil2GhVk-unsplash.jpg" class="image" alt="Nurturing Intellects">
+</div>
+<div class="text">
+<h1>Nurturing Intellects</h1>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="school.html">Schools</a></li>
+<li><a href="children.html">Children</a></li>
+<li><a href="donate.html">Donate</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="steps" class="steps" style="background-color: bisque;">
+<h2>From Underprivileged Child to Private School Enrollment</h2>
+<div class="flowchart">
+<div class="start-end">Start</div>
+<div class="arrow"></div>
+<div class="process"><strong>Step 1:</strong> Identifying underprivileged children in need of education.</div>
+<div class="arrow"></div>
+<div class="process"><strong>Step 2:</strong> Assessing the child's educational needs and potential.</div>
+<div class="arrow"></div>
+<div class="process"><strong>Step 3:</strong> Securing funding and sponsorship through donations.</div>
+<div class="arrow"></div>
+<div class="process"><strong>Step 4:</strong> Partnering with private schools willing to enroll the children.</div>
+<div class="arrow"></div>
+<div class="process"><strong>Step 5:</strong> Completing the enrollment process and providing necessary supplies.</div>
+<div class="arrow"></div>
+<div class="process"><strong>Step 6:</strong> Providing transportation to and from school for the child.</div>
+<div class="arrow"></div>
+<div class="process"><strong>Step 7:</strong> Ensuring the child receives regular health check-ups.</div>
+<div class="arrow"></div>
+<div class="process"><strong>Step 8:</strong> Offering additional tutoring and support as needed.</div>
+<div class="arrow"></div>
+<div class="process"><strong>Step 9:</strong> Monitoring the child's progress and providing ongoing support.</div>
+<div class="arrow"></div>
+<div class="start-end">End</div>
+</div>
+</section>
+<br style="background-color: bisque;">
+<br>
+<br>
+<p class="list" >List of all the schools enrolled under us-</p>
+
+<section id="schools" class="schools-grid" style="background-color: bisque;">
+<div class="school-card">
+<img src="schoolphotos/download (1).jpg" alt="School 1">
+<div class="details">
+<h3>Bright Future Academy</h3>
+<p>Location: Mumbai, Maharashtra</p>
+<p>Bright Future Academy is committed to providing quality education to children from all backgrounds.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/download (2).jpg" alt="School 2">
+<div class="details">
+<h3>Sunrise Public School</h3>
+<p>Location: Delhi</p>
+<p>Sunrise Public School offers a nurturing environment where children can thrive academically and personally.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/download.jpg" alt="School 3">
+<div class="details">
+<h3>Green Valley School</h3>
+<p>Location: Bengaluru, Karnataka</p>
+<p>Green Valley School focuses on holistic education, encouraging students to excel in all areas of life.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (1).jpg" alt="School 4">
+<div class="details">
+<h3>Bluebell International School</h3>
+<p>Location: Hyderabad, Telangana</p>
+<p>Bluebell International School provides a diverse and inclusive learning environment for all students.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (10).jpg" alt="School 5">
+<div class="details">
+<h3>Harmony School</h3>
+<p>Location: Chennai, Tamil Nadu</p>
+<p>Harmony School is dedicated to fostering a love for learning in students of all ages and backgrounds.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (11).jpg" alt="School 6">
+<div class="details">
+<h3>Ganga International School</h3>
+<p>Location: Kolkata, West Bengal</p>
+<p> Ganga International School focuses on academic excellence and personal growth for every student.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (2).jpg" alt="School 7">
+<div class="details">
+<h3>Mount View School</h3>
+<p>Location: Pune, Maharashtra</p>
+<p>Mount View School offers a rigorous curriculum and supportive environment for students to succeed.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (3).jpg" alt="School 8">
+<div class="details">
+<h3>Riverdale High School</h3>
+<p>Location: Jaipur, Rajasthan</p>
+<p>Riverdale High School is known for its commitment to student success and community involvement.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (4).jpg" alt="School 9">
+<div class="details">
+<h3>Silver Oak School</h3>
+<p>Location: Ahmedabad, Gujarat</p>
+<p>Silver Oak School emphasizes quality education and character development for its students.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (5).jpg" alt="School 10">
+<div class="details">
+<h3>Royal Kids Academy</h3>
+<p>Location: Lucknow, Uttar Pradesh</p>
+<p>Royal Kids Academy provides a well-rounded education that prepares students for future success.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (6).jpg" alt="School 11">
+<div class="details">
+<h3>Shining Star School</h3>
+<p>Location: Patna, Bihar</p>
+<p>Shining Star School is dedicated to inspiring and empowering students to achieve their goals.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (7).jpg" alt="School 12">
+<div class="details">
+<h3>Wisdom Valley School</h3>
+<p>Location: Bhopal, Madhya Pradesh</p>
+<p>Wisdom Valley School focuses on academic excellence and personal growth for every student.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (8).jpg" alt="School 13">
+<div class="details">
+<h3>Elite International School</h3>
+<p>Location: Thiruvananthapuram, Kerala</p>
+<p>Elite International School offers a global education experience to students from all backgrounds.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images (9).jpg" alt="School 14">
+<div class="details">
+<h3>Maple Leaf Academy</h3>
+<p>Location: Chandigarh</p>
+<p>Maple Leaf Academy is committed to providing a supportive and challenging learning environment.</p>
+</div>
+</div>
+<div class="school-card">
+<img src="schoolphotos/images.jpg" alt="School 15">
+<div class="details">
+<h3>National Public School</h3>
+<p>Location: Dehradun, Uttarakhand</p>
+<p>National Public School fosters a love of learning and academic excellence in all its students.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-section about">
+<h3>About Nurturing Intellects</h3>
+<p>Nurturing Intellects is dedicated to improving the lives of underprivileged children through education, healthcare, and community support. Join us in our mission to create brighter futures.</p>
+</div>
+<div class="footer-section links">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="children.html">Children</a></li>
+<li><a href="volunteer.html">Volunteer</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="donate.html">Donate</a></li>
+</ul>
+</div>
+<div class="footer-section contact-form">
+<h3>Contact Us</h3>
+<form action="contact.html" method="post">
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+<button type="submit">Send</button>
+</form>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>

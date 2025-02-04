@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Children - Nurturing Intellects</title>
+<link rel="stylesheet" href="donate.css">
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: bisque;
+}
+
+.container {
+width: 80%;
+margin: auto;
+padding: 20px;
+}
+
+.button-container {
+text-align: center;
+margin: 20px 0;
+}
+
+.button-container button {
+padding: 10px 20px;
+margin: 10px;
+font-size: 16px;
+cursor: pointer;
+border: none;
+background-color: #4CAF50;
+color: white;
+border-radius: 5px;
+transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+.button-container button:hover {
+background-color: #45a049;
+transform: scale(1.2);
+        }
+
+.children-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 20px;
+margin-top: 20px;
+}
+
+.child-card {
+    background-image: linear-gradient(to bottom, #f6bc66, #ffcc00);
+border-radius: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+text-align: center;
+padding: 15px;
+height: 550px;
+}
+
+.child-card img {
+width: 100%;
+height: 330px;
+object-fit:contain;
+}
+
+.child-card .details {
+padding: 15px;
+}
+
+.child-card .details h3 {
+margin: 0 0 10px 0;
+}
+
+.child-card .details p {
+margin: 0 0 10px 0;
+}
+</style>
+<script>
+function showChildren(type) {
+document.getElementById('adopted-children').style.display = type === 'adopted' ? 'grid' : 'none';
+document.getElementById('available-children').style.display = type === 'available' ? 'grid' : 'none';
+}
+function inquireAboutChild(childId) {
+    window.location.href = `child-details.html?childId=${childId}`;
+}
+</script>
+</head>
+<body>
+<header>
+<div class="logo">
+<img src="aaron-burden-6jYoil2GhVk-unsplash.jpg" class="image" alt="Nurturing Intellects">
+</div>
+<div class="text">
+<h1>Nurturing Intellects</h1>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="school.html">Schools</a></li>
+<li><a href="volunteer.html">Volunteer</a></li>
+<li><a href="donate.html">Donate</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="container">
+<h2>Children</h2>
+<p>Select the category of children you would like to see:</p>
+<div class="button-container">
+<button onclick="showChildren('adopted')">Already Adopted</button>
+<button onclick="showChildren('available')">Available for Adoption</button>
+</div>
+
+<div id="adopted-children" class="children-grid" style="display: none;">
+
+<div class="child-card">
+<img src="childrenphotos/1691163844.jpeg" alt="Child 1">
+
+<div class="details">
+<h3>Aditya Sharma</h3>
+<p>Age: 8</p>
+<p>Location: Delhi</p>
+<p>Adopted by: Mr. and Mrs. Gupta</p>
+</div>
+</div>
+<div class="child-card">
+<img src="childrenphotos/1668171256.jpeg" alt="Child 2">
+
+<div class="details">
+   
+<h3>Riya Verma</h3>
+<p>Age: 7</p>
+<p>Location: Jharkhand</p>
+<p>Adopted by: Mr. and Mrs. Singh</p>
+</div>
+</div>
+<div class="child-card">
+<img src="childrenphotos/1692624125.png" alt="Child 5">
+
+<div class="details">
+<h3>Aakash Mehra</h3>
+<p>Age: 9</p>
+<p>Location: Bihar</p>
+<p>Adopted by: Mr. and Mrs. Patel</p>
+</div>
+</div>
+<div class="child-card">
+<img src="childrenphotos/1670854129.jpeg" alt="Child 6">
+
+<div class="details">
+  
+<h3>Sara Khan</h3>
+<p>Age: 8</p>
+<p>Location: Odisha</p>
+<p>Adopted by: Mr. and Mrs. Khan</p>
+</div>
+</div>
+<div class="child-card">
+<img src="childrenphotos/1692704106.jpg" alt="Child 7">
+
+<div class="details">
+<h3>Rahul Singh</h3>
+<p>Age: 10</p>
+<p>Location: Delhi</p>
+<p>Adopted by: Mr. and Mrs. Malhotra</p>
+</div>
+</div>
+<div class="child-card">
+<img src="childrenphotos/1671518616.jpeg" alt="Child 8">
+
+<div class="details">
+  
+<h3>Meera Das</h3>
+<p>Age: 7</p>
+<p>Location: Jharkhand</p>
+<p>Adopted by: Mr. and Mrs. Das</p>
+</div>
+</div>
+<div class="child-card">
+<img src="childrenphotos/1713264168.jpg" alt="Child 13" > 
+
+<div class="details">
+<h3>Arjun Patel</h3>
+<p>Age: 9</p>
+<p>Location: Gujarat</p>
+<p>Adopted by: Mr. and Mrs. Desai</p>
+</div>
+</div>
+<div class="child-card">
+<img src="childrenphotos/1674117834.jpeg" alt="Child 14">
+
+<div class="details">
+  
+<h3>Priya Sharma</h3>
+<p>Age: 8</p>
+<p>Location: Rajasthan</p>
+<p>Adopted by: Mr. and Mrs. Chaudhary</p>
+</div>
+</div>
+<div class="child-card">
+<img src="childrenphotos/1681564026.jpg" alt="Child 15">
+
+<div class="details">
+<h3>Aryan Singh</h3>
+<p>Age: 7</p>
+<p>Location: Uttar Pradesh</p>
+<p>Adopted by: Mr. and Mrs. Mishra</p>
+</div>
+</div>
+<div class="child-card">
+    <img src="childrenphotos/1676356773.jpeg" alt="Child 19">
+   
+    <div class="details">
+
+        <h3>Nisha Yadav</h3>
+        <p>Age: 8</p>
+        <p>Location: Mumbai</p>
+        <p>Adopted by: Mr. and Mrs. Sharma</p>
+    </div>
+</div>
+<div class="child-card">
+    <img src="childrenphotos/1696615244.jpg" alt="Child 20">
+  
+    <div class="details">
+        <h3>Rohan Mehta</h3>
+        <p>Age: 7</p>
+        <p>Location: Kolkata</p>
+        <p>Adopted by: Mr. and Mrs. Agarwal</p>
+    </div>
+</div>
+<div class="child-card">
+    <img src="childrenphotos/1715604395.jpg" alt="Child 21">
+   
+    <div class="details">
+        <h3>Isha Sharma</h3>
+        <p>Age: 13</p>
+        <p>Location: Bengaluru</p>
+        <p>Adopted by: Mr. and Mrs. Reddy</p>
+    </div>
+</div>
+<div class="child-card">
+    <img src="childrenphotos/1682924597.jpg" alt="Child 22">
+    
+    <div class="details">
+        <h3>Aryan Singh</h3>
+        <p>Age: 9</p>
+        <p>Location: Hyderabad</p>
+        <p>Adopted by: Mr. and Mrs. Jain</p>
+    </div>
+</div>
+<div class="child-card">
+    <img src="childrenphotos/1715604262.jpg" alt="Child 23">
+   
+    <div class="details">
+        <h3>Disha Kumari</h3>
+        <p>Age: 9</p>
+        <p>Location: Chennai</p>
+        <p>Adopted by: Mr. and Mrs. Bhatia</p>
+    </div>
+</div>
+<div class="child-card">
+    <img src="childrenphotos/1713019831.jpg" alt="Child 22">
+   
+    <div class="details">
+        <h3>Shashank</h3>
+        <p>Age: 12</p>
+        <p>Location: Delhi</p>
+        <p>Adopted by: Mr. and Mrs. Jha</p>
+    </div>
+</div>
+<div class="child-card">
+    <img src="childrenphotos/1674117608.jpeg" alt="Child 22">
+  
+    <div class="details">
+        <h3>Swati Kumari</h3>
+        <p>Age: 13</p>
+        <p>Location: Banaras</p>
+        <p>Adopted by: Mr. and Mrs. Singh</p>
+    </div>
+</div>
+<div class="child-card">
+    <img src="childrenphotos/1695368626.jpg" alt="Child 22">
+
+    
+    <div class="details">
+        <h3>Shaswat Kumar</h3>
+        <p>Age: 7</p>
+        <p>Location: Hyderabad</p>
+        <p>Adopted by: Mr. and Mrs. Sehgal</p>
+    </div>
+</div>
+<div class="child-card">
+    <img src="childrenphotos/1696599079.jpg" alt="Child 22">
+    
+    <div class="details">
+        <h3>Madhav Popli</h3>
+        <p>Age: 11</p>
+        <p>Location: Faridabad</p>
+        <p>Adopted by: Mr. and Mrs. Punj</p>
+    </div>
+</div>
+
+</div>
+
+<div id="available-children" class="children-grid" style="display: none;">
+
+<div class="child-card">
+<img src="children2photos/1674117737.jpeg" alt="Child 3">
+<div class="details">
+<h3>Aarav Kumar</h3>
+<p>Age: 6</p>
+<p>Location: Bihar</p>
+<button onclick="inquireAboutChild(1)" class="btn">Inquire Now</button>
+
+</div>
+</div>
+<div class="child-card">
+<img src="children2photos/1684770904.jpg" alt="Child 4">
+<div class="details">
+<h3>Ananya Das</h3>
+<p>Age: 5</p>
+<p>Location: Odisha</p>
+
+<button onclick="inquireAboutChild(2)" class="btn">Inquire Now</button>
+</div>
+</div>
+<div class="child-card">
+<img src="children2photos/1685425730.jpg" alt="Child 9">
+<div class="details">
+<h3>Vikram Roy</h3>
+<p>Age: 7</p>
+<p>Location: Delhi</p>
+<button onclick="inquireAboutChild(3)" class="btn">Inquire Now</button>
+
+</div>
+</div>
+<div class="child-card">
+<img src="children2photos/1688200211.jpg" alt="Child 10">
+<div class="details">
+<h3>Pooja Singh</h3>
+<p>Age: 6</p>
+<p>Location: Jharkhand</p>
+<button onclick="inquireAboutChild(4)" class="btn">Inquire Now</button>
+
+</div>
+</div>
+<div class="child-card">
+<img src="children2photos/1688052623.jpg" alt="Child 11">
+<div class="details">
+<h3>Rohan Gupta</h3>
+<p>Age: 8</p>
+<p>Location: Bihar</p>
+<button onclick="inquireAboutChild(5)" class="btn">Inquire Now</button>
+
+</div>
+</div>
+<div class="child-card">
+<img src="children2photos/1688200302.jpg" alt="Child 12">
+<div class="details">
+<h3>Sneha Patil</h3>
+<p>Age: 5</p>
+<p>Location: Odisha</p>
+<button onclick="inquireAboutChild(6)" class="btn">Inquire Now</button>
+
+</div>
+</div>
+<div class="child-card">
+    <img src="children2photos/1688200600.jpg" alt="Child 9">
+    <div class="details">
+        <h3>Aditya Sharma</h3>
+        <p>Age: 7</p>
+        <p>Location: Delhi</p>
+        <button onclick="inquireAboutChild(7)" class="btn">Inquire Now</button>
+       
+    </div>
+</div>
+<div class="child-card">
+    <img src="children2photos/1688200582.jpg" alt="Child 10">
+    <div class="details">
+        <h3>Riya Verma</h3>
+        <p>Age: 9</p>
+        <p>Location: Rajasthan</p>
+        <button onclick="inquireAboutChild(8)" class="btn">Inquire Now</button>
+       
+    </div>
+</div>
+
+<div class="child-card">
+    <img src="children2photos/1688200469.jpg" alt="Child 11">
+    <div class="details">
+        <h3>Aryan Mehta</h3>
+        <p>Age: 7</p>
+        <p>Location: Gujarat</p>
+        <button onclick="inquireAboutChild(9)" class="btn">Inquire Now</button>
+        
+    </div>
+</div>
+
+<div class="child-card">
+    <img src="children2photos/1690810456.jpg" alt="Child 12">
+    <div class="details">
+        <h3>Priya Devi</h3>
+        <p>Age: 8</p>
+        <p>Location: Maharashtra</p>
+        <button onclick="inquireAboutChild(10)" class="btn">Inquire Now</button>
+       
+    </div>
+</div>
+
+<div class="child-card">
+    <img src="children2photos/1671518751.jpeg" alt="Child 13">
+    <div class="details">
+        <h3>Sufina Mohammad</h3>
+        <p>Age: 10</p>
+        <p>Location: Uttar Pradesh</p>
+        <button onclick="inquireAboutChild(11)" class="btn">Inquire Now</button>
+    </div>
+</div>
+
+<div class="child-card">
+    <img src="children2photos/1690389238.jpg" alt="Child 14">
+    <div class="details">
+        <h3>Nisha Sharma</h3>
+        <p>Age: 5</p>
+        <p>Location: West Bengal</p>
+        <button onclick="inquireAboutChild(12)" class="btn">Inquire Now</button>
+    </div>
+</div>
+
+<div class="child-card">
+    <img src="children2photos/1688200695.jpg" alt="Child 15">
+    <div class="details">
+        <h3>Venkatesh</h3>
+        <p>Age: 6</p>
+        <p>Location: Tamil Nadu</p>
+        <button onclick="inquireAboutChild(13)" class="btn">Inquire Now</button>
+    </div>
+</div>
+
+
+</div>
+</div>
+
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-section about">
+<h3>About Nurturing Intellects</h3>
+<p>Nurturing Intellects is dedicated to improving the lives of underprivileged children through education and community support. Join us in our mission to create brighter futures.</p>
+</div>
+<div class="footer-section links">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html" style="color: blue;">Home</a></li>
+<li><a href="school.html" style="color: blue;">Schools</a></li>
+
+<li><a href="volunteer.html" style="color: blue;">Volunteer</a></li>
+
+<li><a href="donate.html" style="color: blue;">Donate</a></li>
+</ul>
+</div>
+<div class="footer-section contact-form">
+<h3>Contact Us</h3>
+<form action="contact.html" method="post">
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+<button type="submit">Send</button>
+</form>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2024 Nurturing Intellects. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
